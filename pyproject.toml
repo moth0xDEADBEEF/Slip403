@@ -5,15 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "slip403"
 version = "0.1.0"
-description = "An over-engineered 403 error bypass scanner"
-authors = [
-    { name = "moth0xDEADBEEF" }
-]
-dependencies = [
-    "requests",
-    "argparse",
-    "termcolor"
-]
+description = "An over-engineered 403 bypass scanner"
+authors = [{ name = "moth0xDEADBEEF" }]
+dependencies = ["requests", "termcolor"]
 
 [project.scripts]
 slip403 = "slip403.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["slip403"]
