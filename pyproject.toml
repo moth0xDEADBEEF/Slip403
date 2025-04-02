@@ -10,8 +10,7 @@ authors = [{ name = "moth0xDEADBEEF" }]
 dependencies = ["requests", "termcolor"]
 
 [project.scripts]
-slip403 = "slip403.__main__:main"
+slip403 = "slip403.main:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["slip403"]
